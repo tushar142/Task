@@ -1,0 +1,414 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+	display: none;
+}
+
+body::-webkit-scrollbar{
+	font-family: 'Merriweather', serif;
+	position: relative;
+ 	overflow: hidden;
+ 	-ms-overflow-style: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.example {
+  -ms-overflow-style: none;
+}
+}
+
+.navbar-light .navbar-nav .nav-link{
+	color: #fff;
+}
+
+.navbar-brand img{
+	display: none;
+}
+
+.navbar{
+	background: #bd5d38;
+}
+
+.nav-link{
+	display: block;
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+
+.section1{
+	position: relative;
+	padding: 5rem 1rem;
+	min-height: 100vh;
+	display: flex;
+	max-width: 75rem;
+	align-items: center;
+	text-align: center;
+}
+
+.sec1wraper{
+	width: 100%;
+}
+
+.sec1wraper h1{
+	margin-bottom: 1rem;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.sec1wraper h1 span{
+	color: #bd5d38;
+}
+
+.address{
+	text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.sec1wraper p{
+    font-size: 1.15rem;
+		font-weight: 400;
+		margin-bottom: 3rem;
+}
+
+.social a{
+	margin-right: 1.5rem;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;	
+	height: 2rem;
+	width: 2rem;
+	background: #495057;
+	border-radius: 100%;
+	color: #000;
+	font-size: 1rem;
+	vertical-align: top;
+	text-decoration: none;
+
+}
+.social a:hover{
+	background: #bd5d38;
+	transition: all 100ms ease-in-out;
+}
+
+.social a i{
+	color: #fff;	
+	vertical-align: top;
+
+}
+
+
+/*==================================================*/
+
+#section2{
+	min-height: 100vh;
+	padding: 3rem 2rem;
+	max-width: 75rem;
+}
+
+.experiece h2{
+	font-weight: normal;
+	letter-spacing: 1px
+}
+
+.bullet{
+
+	list-style-type: "→";
+}
+
+.bullet li{
+	padding: .5rem .5rem;
+}
+
+.skill_list{
+	line-height: 3rem
+}
+
+.bde{
+	font-size: 1.3rem
+}
+
+.bde+h5{
+	font-size: .8rem
+}
+
+
+/*=========================================================*/
+
+.section3{
+	min-height: 100vh;
+	padding: 3rem 2rem;
+	max-width: 75rem;
+}
+
+.skills h2{
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+
+
+/*============================================================*/
+
+.section4{
+	min-height: 100vh;
+	padding: 3rem 2rem;
+	max-width: 75rem;
+}
+
+.projects h2{
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+
+.scale{
+	overflow: hidden;
+	padding: 0;
+	height: 250px;
+}
+
+
+
+.port_1,
+.port_2,
+.port_3{
+	background: url("slide3.jpg");
+	background-size: cover;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	margin: 1rem 0;	
+	height: inherit;	
+	transition: all 300ms linear;
+}
+.port_2{
+	background: url("pcbg.jpg");
+	background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+
+.port_3{
+	background: url("slide1.jpg");
+	background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+
+.display{
+	display: none;
+}
+
+
+.port_1:hover .port_img,
+.port_2:hover .port_img,
+.port_3:hover .port_img
+	{
+		transform: translateX(0);
+	}
+
+.port_1:hover,
+.port_2:hover,
+.port_3:hover{
+	transform: scale(1.1);
+}
+
+.port_img{
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+	background: -o-linear-gradient(left, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+	background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+	height: 100%;
+	flex-direction: column;	
+	justify-content: center;
+	align-items: center;
+	padding: 0rem 5rem;
+	transform: translateX(-100%);
+	transition: all 300ms linear;
+}
+
+
+.port_img a{
+	text-decoration: none;
+	color: white;
+	padding: .5rem 1.2rem;
+	background: #bd5d38;
+	transition: all 100ms ease-in-out;
+}	
+
+.port_img a:hover{
+	background: #934f36;
+}
+
+.port_img p{
+	font-size: .6rem;
+}
+
+
+@media screen and (min-width: 768px) {
+	.navbar{
+		flex-direction: row!important;
+	}
+	.sec1wraper h1{
+		font-size: 4rem;
+		text-transform: uppercase;
+	}
+	.address{
+		text-transform: uppercase;
+	    font-weight: 500;
+	    font-size: 1.5rem;
+	    margin-bottom: 3rem;
+	}
+
+	.address a{
+		display: block;
+	}
+
+	.section1{
+		padding: 1rem 2rem;
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		max-width: 75rem;
+		text-align: left;
+	}
+
+	#section2{
+		min-height: 100vh;
+		padding: 5rem 3rem;
+		max-width: 75rem;
+	}
+
+	.experiece h2{
+		font-weight: bold;
+		letter-spacing: 2px
+	}
+
+	.section3{
+		min-height: 100vh;
+		padding: 5rem 3rem;
+		max-width: 75rem;
+	}
+
+	.skills h2{
+		font-weight: bold;
+		letter-spacing: 2px
+	}
+
+	.section4{
+		min-height: 100%;
+		padding: 5rem 3rem;
+		max-width: 75rem;
+	}
+
+	.projects h2{
+		font-weight: bold;
+		letter-spacing: 2px
+	}
+	.social a{
+		margin-right: 1.5rem;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;	
+		height: 3.5rem;
+		width: 3.5rem;
+		background: #495057;
+		border-radius: 100%;
+		color: #000;
+		font-size: 1.5rem;
+		vertical-align: top;
+		text-decoration: none;
+	
+	}
+
+	.port_img a{
+		padding: .7rem 2.3rem;
+	}
+
+	.port_img p{
+		font-size: .7rem;
+		padding-bottom: 0.8rem;
+	}
+
+	.display{
+		display: block;
+		visibility: hidden;
+	}
+
+}
+
+
+@media screen and (min-width: 992px) {
+	body{
+		padding-left: 17rem;
+	}
+	
+	.navbar{
+		position: fixed;
+		left: 0;
+		z-index: 111;
+		height: 100vh;
+		width: 17rem;
+		background-color: #bd5d38;
+		display: flex;
+		flex-direction: column!important;
+		justify-content: center;
+	}
+
+	.navbar-nav{
+		flex-direction: column;
+		text-align: center;
+	}
+
+
+	.navbar-brand{
+		margin: 0rem 1rem 2rem 1rem;
+	}
+
+	.navbar-brand span{
+		display: none;
+	}
+	.navbar-brand img{
+		display:block;
+		max-width: 12rem;
+		max-height: 12rem;
+		border-radius: 50%;
+		border: .4rem solid #CA7D60;
+	}
+
+	.collapse{
+		flex-basis: auto;
+		flex-grow: 0;
+		justify-content: center;
+		margin-bottom: 4rem;
+	}
+
+	.nav-link{
+		display: block;
+		font-weight: 800;
+		letter-spacing: 0.05rem;
+		text-transform: uppercase;
+
+	}
+
+	.section1{
+		padding: 5rem 3rem;
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		max-width: 75rem;
+	}
+
+	.sec1wraper h1{
+		font-size: 6rem;
+		text-transform: uppercase;
+	}
+}
